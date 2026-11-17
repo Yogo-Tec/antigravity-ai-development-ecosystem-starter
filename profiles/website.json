@@ -1,0 +1,20 @@
+{
+  "profile": "website",
+  "skills": [
+    "project-discovery",
+    "product-requirements",
+    "software-architecture",
+    "ui-ux-review",
+    "design-system",
+    "frontend-development",
+    "backend-development",
+    "database-engineering",
+    "api-development",
+    "browser-testing",
+    "code-review",
+    "debugging",
+    "security-review",
+    "deployment",
+    "documentation"
+  ]
+}

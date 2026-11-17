@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "description": "Starter registry. Included skills are available locally; planned skills require review before adoption.",
+  "skills": [
+    {
+      "id": "project-discovery",
+      "path": "skills/project-discovery/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "product-requirements",
+      "path": "skills/product-requirements/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "software-architecture",
+      "path": "skills/software-architecture/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "ui-ux-review",
+      "path": "skills/ui-ux-review/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "design-system",
+      "path": "skills/design-system/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "frontend-development",
+      "path": "skills/frontend-development/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "backend-development",
+      "path": "skills/backend-development/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "database-engineering",
+      "path": "skills/database-engineering/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "api-development",
+      "path": "skills/api-development/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "browser-testing",
+      "path": "skills/browser-testing/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "code-review",
+      "path": "skills/code-review/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "debugging",
+      "path": "skills/debugging/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "security-review",
+      "path": "skills/security-review/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "deployment",
+      "path": "skills/deployment/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "documentation",
+      "path": "skills/documentation/SKILL.md",
+      "status": "included"
+    }
+  ],
+  "planned_skills": [
+    "mobile-development",
+    "ecommerce-development",
+    "community-platform",
+    "office-management",
+    "wordpress-plugin-development",
+    "browser-extension-development",
+    "image-prompt-engineering",
+    "accessibility-audit",
+    "seo-optimization",
+    "performance-optimization",
+    "dependency-audit",
+    "ci-cd",
+    "monitoring",
+    "mcp-server-development"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "profile": "mobile",
+  "skills": [
+    "project-discovery",
+    "product-requirements",
+    "software-architecture",
+    "ui-ux-review",
+    "design-system",
+    "backend-development",
+    "database-engineering",
+    "api-development",
+    "code-review",
+    "debugging",
+    "security-review",
+    "deployment",
+    "documentation"
+  ]
+}
