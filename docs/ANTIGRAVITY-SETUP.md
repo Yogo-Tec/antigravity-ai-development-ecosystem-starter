@@ -1,17 +1,39 @@
-# Antigravity setup
+# Antigravity Setup & Onboarding Guide
 
-1. Clone the central repository to a stable local folder.
-2. Create a project folder.
-3. Run the Windows PowerShell profile installer.
-4. Open the target folder in Antigravity.
-5. Ask Antigravity to inspect AGENTS.md and `.agents/skills/`, then list the skills it actually discovers.
-6. Review the plan before implementation.
+## 1. Setup Architecture
+1. **Central Repository**: Maintain this repository in a stable directory (e.g., `C:\AI\antigravity-ai-development-ecosystem`).
+2. **Project Target**: Create or identify your application directory (e.g., `C:\Projects\MyApplication`).
+3. **Profile Installation**: Run `install-profile.ps1` to populate `.agents/skills/` and copy `AGENTS.md`.
+4. **Project Declaration**: Copy `PROJECT_SKILLS.md` into the target project root and configure active skills.
+5. **Open in Antigravity**: Antigravity automatically discovers skills situated inside `.agents/skills/`.
 
-Example:
+---
+
+## 2. Installation Command Example
 ```powershell
-git clone https://github.com/YOUR-USERNAME/antigravity-ai-development-ecosystem.git C:\AI\antigravity-ai-development-ecosystem
 cd C:\AI\antigravity-ai-development-ecosystem
-.\scripts\install-profile.ps1 -ProjectPath C:\Projects\MyWebsite -Profile website
+.\scripts\install-profile.ps1 -ProjectPath "C:\Projects\MyApplication" -Profile website
+Copy-Item "PROJECT_SKILLS.md" "C:\Projects\MyApplication\PROJECT_SKILLS.md"
 ```
 
-This kit copies selected skills into the project instead of relying on unverified `skills.json` inheritance. Global discovery paths, custom agent formats and MCP config locations must be checked against current official Antigravity documentation.
+---
+
+## 3. Verifying Discovery in Antigravity
+When you launch Antigravity on your target folder:
+1. Prompt Antigravity:
+   > *"Inspect AGENTS.md, PROJECT_SKILLS.md and .agents/skills/. List discovered skills and summarize active project instructions."*
+2. Verify that Antigravity lists only the skills installed for your active profile.
+3. Review the proposed plan before authorizing code implementation.
+
+---
+
+## 4. Integrity Validation
+Before committing or updating skills, execute the validator:
+```powershell
+.\scripts\validate-skills.ps1
+```
+Or with Python:
+```bash
+python scripts/validate-skills.py
+```
+Both `skills/` (source) and `.agents/skills/` (workspace) will be verified for valid frontmatter, non-empty workflows, and manifest integrity.

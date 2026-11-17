@@ -17,8 +17,15 @@ foreach ($Skill in $Manifest.skills) {
   Copy-Item $Source $Destination -Recurse
   Write-Host "Installed: $Skill" -ForegroundColor Green
 }
-$Master = Join-Path $RepoRoot "AGENTS.md"
+$MasterAgents = Join-Path $RepoRoot "AGENTS.md"
 $ProjectAgents = Join-Path $ProjectPath "AGENTS.md"
-if (-not (Test-Path $ProjectAgents)) { Copy-Item $Master $ProjectAgents }
+if (-not (Test-Path $ProjectAgents)) { Copy-Item $MasterAgents $ProjectAgents }
 else { Write-Host "Existing AGENTS.md preserved; merge manually if needed." -ForegroundColor Yellow }
+
+$MasterProjectSkills = Join-Path $RepoRoot "PROJECT_SKILLS.md"
+$ProjectSkills = Join-Path $ProjectPath "PROJECT_SKILLS.md"
+if (Test-Path $MasterProjectSkills) {
+  if (-not (Test-Path $ProjectSkills)) { Copy-Item $MasterProjectSkills $ProjectSkills; Write-Host "Copied PROJECT_SKILLS.md" -ForegroundColor Green }
+}
+
 Write-Host "Profile '$Profile' installed. Open the project in Antigravity and verify skill discovery."

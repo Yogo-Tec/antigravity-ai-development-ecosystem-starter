@@ -10,6 +10,8 @@
     "code-review",
     "debugging",
     "security-review",
+    "performance-optimization",
+    "monitoring",
     "documentation"
   ]
 }

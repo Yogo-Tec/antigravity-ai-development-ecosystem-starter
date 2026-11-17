@@ -68,6 +68,16 @@
       "status": "included"
     },
     {
+      "id": "performance-optimization",
+      "path": "skills/performance-optimization/SKILL.md",
+      "status": "included"
+    },
+    {
+      "id": "monitoring",
+      "path": "skills/monitoring/SKILL.md",
+      "status": "included"
+    },
+    {
       "id": "deployment",
       "path": "skills/deployment/SKILL.md",
       "status": "included"
@@ -88,10 +98,8 @@
     "image-prompt-engineering",
     "accessibility-audit",
     "seo-optimization",
-    "performance-optimization",
     "dependency-audit",
     "ci-cd",
-    "monitoring",
     "mcp-server-development"
   ]
 }

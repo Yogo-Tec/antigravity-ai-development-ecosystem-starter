@@ -12,6 +12,8 @@
     "code-review",
     "debugging",
     "security-review",
+    "performance-optimization",
+    "monitoring",
     "deployment",
     "documentation"
   ]
